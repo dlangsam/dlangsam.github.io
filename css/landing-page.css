@@ -116,7 +116,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/startup-photos.jpg) no-repeat center center;
+    background: url(../img/pencils.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -134,6 +134,7 @@ h6 {
     float: right;
     margin-top: 0;
 }
+
 
 @media(max-width:1199px) {
     ul.banner-social-buttons {

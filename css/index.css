@@ -1,0 +1,21 @@
+
+.profile-pic > img{
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 400px;
+}
+.project{
+	float:left;
+	margin: 20px;
+	display: inline-block;
+
+}
+.project > img{
+	height: 200px;
+}
+h3.email{
+	 margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 2em;
+}
