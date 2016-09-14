@@ -22,6 +22,9 @@ h3.email{
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 2em;
 }
+.email > a{
+	color:white;
+}
 .connect > img{
 	margin-left: auto;
 	margin-right: auto;
