@@ -48,3 +48,22 @@ h3.email{
     font-weight: 400;
     letter-spacing: 1px;
 }
+.contact{
+	position: relative;
+	top: 40px;
+}
+.message-me{
+	text-align: center;
+}
+.submit{
+		background-color:  #61cdff;
+}
+.submit:hover{
+	color: white;
+	background-color:  #620d85;
+
+
+}
+a{
+	color: #61cdff;
+}
