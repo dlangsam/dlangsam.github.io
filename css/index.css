@@ -49,8 +49,7 @@ h3.email{
     letter-spacing: 1px;
 }
 .contact{
-	position: relative;
-	top: 40px;
+	padding-top: 10px;
 }
 .message-me{
 	text-align: center;
