@@ -29,10 +29,10 @@ $(document).on('ready', function(){
         //Once I get the result I am rounding to 10 digits and then calling toFixed 
         // to truncating at the 10th digit. I then round again so that any extra zeros 
         // that may have been added by the toFixed method are removed.
-        var resultDisplayed = new BigNumber(result).round(digits);
-        resultDisplayed = new BigNumber(resultDisplayed).toFixed(digits);
-        resultDisplayed = new BigNumber(resultDisplayed).round(digits);
-         $('.js-display').val(resultDisplayed); 
+        var resultDisplayed = math.bignumber(result).round(digits);
+        resultDisplayed = math.bignumber(resultDisplayed).toFixed(digits);
+        resultDisplayed = math.bignumber(resultDisplayed).round(digits);
+         $('.js-display').val(result); 
 	}
 
 

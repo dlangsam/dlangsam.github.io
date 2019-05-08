@@ -59,16 +59,16 @@ class Calculator{
 		}
         switch(symbol){
         	case "√":
-        		this.accumulator = new BigNumber(this.accumulator).sqrt();
+        		this.accumulator = math.bignumber(this.accumulator).sqrt();
         		break;
         	case "x²":
-        		this.accumulator = new BigNumber(this.accumulator).pow(2);
+        		this.accumulator = math.bignumber(this.accumulator).pow(2);
         		break;
         	case "x⁻¹":
-        		this.accumulator = new BigNumber(this.accumulator).pow(-1);
+        		this.accumulator = math.bignumber(this.accumulator).pow(-1);
         		break;
         	case "∓":
-        		this.accumulator = new BigNumber(this.accumulator).neg();
+        		this.accumulator = math.bignumber(this.accumulator).neg();
         		break;
         	default:
         		break;
@@ -96,19 +96,19 @@ class Calculator{
 		 	var symbol = this.pending.symbol; 
             switch(symbol){
             	case "+": 
-            			this.accumulator = new BigNumber(this.pending.number).plus(new BigNumber(this.accumulator));
+            			this.accumulator = math.bignumber(this.pending.number).plus(math.bignumber(this.accumulator));
             	 		break;
             	case "-":
-            			this.accumulator = new BigNumber(this.pending.number).minus(new BigNumber(this.accumulator));
+            			this.accumulator = math.bignumber(this.pending.number).minus(math.bignumber(this.accumulator));
             			break;
             	case "×":
-            			this.accumulator = new BigNumber(this.pending.number).times(new BigNumber(this.accumulator));
+            			this.accumulator = math.bignumber(this.pending.number).times(math.bignumber(this.accumulator));
             			break;
             	case "÷":
-            			this.accumulator = new BigNumber(this.pending.number).div(new BigNumber(this.accumulator));
+            			this.accumulator = math.bignumber(this.pending.number).div(new math.bignumber(this.accumulator));
             			break;
             	 case "xⁿ":
-            			this.accumulator = new BigNumber(this.pending.number).pow( new BigNumber(this.accumulator));		
+            			this.accumulator = math.bignumber(this.pending.number).pow(math.bignumber(this.accumulator));		
             			break;
             	default: 
             			break;
