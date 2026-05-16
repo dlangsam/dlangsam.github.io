@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="blog-listing">
+    <div class="container">
+        <h1>Blog</h1>
+
+        <div class="posts-grid">
+            {% for post in site.posts %}
+            <article class="post-card">
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                <a href="{{ post.url | relative_url }}" class="btn btn-secondary">Read More →</a>
+            </article>
+            {% endfor %}
+        </div>
+
+        {% if site.posts.size == 0 %}
+        <p style="text-align: center; color: var(--text-secondary); margin-top: 3rem;">
+            No posts yet. Check back soon!
+        </p>
+        {% endif %}
+    </div>
+</div>

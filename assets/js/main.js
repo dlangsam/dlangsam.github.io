@@ -87,6 +87,20 @@ document.querySelectorAll('.skill-category').forEach(category => {
 
 // Add active state to nav links based on scroll position
 window.addEventListener('scroll', () => {
+    // Check if we're on a blog page
+    if (window.location.pathname.includes('/blog')) {
+        // Highlight the Blog nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        const blogLink = document.querySelector('.nav-link[href*="blog"]');
+        if (blogLink) {
+            blogLink.classList.add('active');
+        }
+        return; // Skip section-based highlighting
+    }
+
+    // Section-based highlighting for the home page
     const sections = document.querySelectorAll('section[id]');
     const scrollY = window.pageYOffset;
 

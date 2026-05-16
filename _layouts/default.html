@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    <!-- Skip to main content for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    {% include navigation.html %}
+
+    <!-- Main Content -->
+    <main id="main-content">
+        {{ content }}
+    </main>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

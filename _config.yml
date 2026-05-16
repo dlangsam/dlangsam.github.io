@@ -1,0 +1,55 @@
+# Site settings
+title: "Devorah Langsam | Senior Software Engineer"
+description: "Senior Software Engineer with a mathematics background and 14 years of experience solving complex problems. Builds scalable software using Ruby on Rails, React, Node.js, and modern technologies."
+url: "https://dlangsam.github.io"
+baseurl: ""
+author: "Devorah Langsam"
+email: "devorah@langsam.org"
+
+# Social links
+github_username: dlangsam
+linkedin_username: devorah-langsam
+
+# Google Analytics
+google_analytics: G-L538C4LVX0
+
+# Build settings
+markdown: kramdown
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - .git
+  - node_modules
+  - vendor
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Permalink structure for blog posts
+permalink: /blog/:year/:month/:day/:title/
+
+# Defaults for front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Devorah Langsam"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Plugins (GitHub Pages compatible only)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
